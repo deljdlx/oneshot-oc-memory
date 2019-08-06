@@ -1,0 +1,13 @@
+body {
+    --color-main: #0CAD93;
+
+
+
+    --gaugeWidh: 20px;
+    --gaugeBackground: #FFF;
+
+    --card-sprite: url('../asset/sprite.png');
+    --card-width: 100px;
+    --card-height: 100px;
+
+}

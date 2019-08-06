@@ -1,0 +1,22 @@
+{
+	"name": "phi-session",
+	"description": "Phi session",
+
+	"repositories": [
+		{"type": "vcs", "url": "https://github.com/ElBiniou/phi-http"}
+	],
+
+	"require":
+	{
+		"phi-http": "dev-master"
+	},
+
+	"autoload": {
+		"psr-4": {
+			"Phi\\Session\\": "source/class"
+		},
+		"files": [
+
+		]
+	}
+}

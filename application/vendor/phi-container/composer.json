@@ -1,0 +1,21 @@
+{
+	"name": "phi-container",
+	"description": "Phi container",
+
+	"repositories": [
+		{"type": "vcs", "url": "https://github.com/ElBiniou/phi-event"}
+	],
+	"require":
+	{
+		"phi-event": "dev-master"
+	},
+
+	"autoload": {
+		"psr-4": {
+			"Phi\\Container\\": "source"
+		},
+		"files": [
+
+		]
+	}
+}

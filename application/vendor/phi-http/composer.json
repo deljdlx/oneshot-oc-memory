@@ -1,0 +1,14 @@
+{
+	"name": "phi-http",
+	"description": "Phi http",
+	"autoload": {
+		"psr-4": {
+			"Phi\\HTTP\\": "source/class"
+		},
+		"files": [
+
+		]
+	}
+}
+
+

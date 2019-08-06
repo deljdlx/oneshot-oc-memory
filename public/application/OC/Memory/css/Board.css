@@ -1,0 +1,45 @@
+.oc-memory-board {
+  position: absolute;
+
+
+  width:100%;
+  height:100%;
+
+
+  background-color:#FFF;
+}
+
+
+
+.oc-memory-board .oc-memory-board-cardcontainer {
+  opacity:0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+}
+
+
+
+
+
+.oc-memory-board-startbutton {
+  border: none;
+  background-color: var(--color-main);
+  color:#FFF;
+  line-height: 100px;
+  height: 100px;
+  width: 100px;
+  font-size: 25px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.7);
+  outline: none;
+}
+
+
+
+.oc-memory-board-startbutton:hover {
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.7);
+}

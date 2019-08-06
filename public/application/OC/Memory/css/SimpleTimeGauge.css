@@ -1,0 +1,16 @@
+
+.oc-memory-simpletimegauge {
+    position:absolute;
+    height:30px;
+    background-color:#FFF;
+    width:100%;
+    bottom:-30px;
+}
+
+.oc-memory-simpletimegauge .oc-memory-simpletimegauge-gauge {
+    height: 100%;
+    width:100%;
+    background-color:#9fd086;
+    animate: all 0.2s linear;
+}
+

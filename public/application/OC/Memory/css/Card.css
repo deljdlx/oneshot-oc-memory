@@ -1,0 +1,86 @@
+.oc-memory-card {
+    border: solid 1px #999;
+    height: var(--card-height);
+    width: var(--card-width);
+    margin: 4px;
+    float: left;
+
+    cursor: pointer;
+    border-radius: 24px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+
+
+    transition: all 0.3s;
+
+}
+
+
+.oc-memory-card.validated {
+    opacity: 0 !important;
+}
+
+.oc-memory-card-hidden {
+
+
+    background-color: #DDD;
+    transition: border, box-shadow,background-color 0.2s;
+
+
+    /*
+    some fancy css for card "back side"
+    https://www.heropatterns.com/
+    here just to demonstrate power of css
+    */
+
+    /*
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%230cad93' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    */
+
+
+}
+
+/*
+Some eye candy for interaction
+ */
+.oc-memory-card-hidden:hover {
+    background-color:#FFF;
+    border: solid 1px #000;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+}
+
+
+
+.oc-memory-card-revealed {
+    background-image: var(--card-sprite);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+    border: solid 1px #5D5;
+}
+
+
+/* sadly this is not already supported
+.oc-memory-card[data-value] {
+    background-position: 0 calc(100 * attr(data-value));
+}
+*/
+/*so lets do it dumbly*/
+.oc-memory-card[data-value='0'] {background-position: 0 0;}
+.oc-memory-card[data-value='1'] {background-position: 0 -100px;}
+.oc-memory-card[data-value='2'] {background-position: 0 -200px;}
+.oc-memory-card[data-value='3'] {background-position: 0 -300px;}
+.oc-memory-card[data-value='4'] {background-position: 0 -400px;}
+.oc-memory-card[data-value='5'] {background-position: 0 -500px;}
+.oc-memory-card[data-value='6'] {background-position: 0 -600px;}
+.oc-memory-card[data-value='7'] {background-position: 0 -700px;}
+.oc-memory-card[data-value='8'] {background-position: 0 -800px;}
+.oc-memory-card[data-value='9'] {background-position: 0 -900px;}
+.oc-memory-card[data-value='10'] {background-position: 0 -1000px;}
+.oc-memory-card[data-value='11'] {background-position: 0 -1100px;}
+.oc-memory-card[data-value='12'] {background-position: 0 -1200px;}
+.oc-memory-card[data-value='13'] {background-position: 0 -1300px;}
+.oc-memory-card[data-value='14'] {background-position: 0 -1400px;}
+.oc-memory-card[data-value='15'] {background-position: 0 -1500px;}
+.oc-memory-card[data-value='16'] {background-position: 0 -1600px;}
+.oc-memory-card[data-value='17'] {background-position: 0 -1700px;}
+
+
+

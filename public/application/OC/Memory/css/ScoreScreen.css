@@ -1,0 +1,35 @@
+.oc-memory-scorescreen {
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align:center;
+    position: absolute;
+    width:100%;
+    z-index:2;
+    color:#555;
+
+}
+
+.oc-memory-scorescreen h2 {
+    font-size: 2em;
+}
+
+.oc-memory-scorescreen li {
+    list-style: none;
+    font-size: 2em;
+}
+
+.oc-memory-scorescreen li span {
+    display: inline-block;
+}
+
+.oc-memory-scorescreen li span.minut:after {
+    content: "'";
+    font-weight: bold;
+    color:#AAA;
+}
+.oc-memory-scorescreen li span.second:after {
+    content: "''";
+    font-weight: bold;
+    color:#AAA;
+}
+

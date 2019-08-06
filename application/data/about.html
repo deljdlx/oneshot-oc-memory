@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    html {
+        background-color:#EEE;
+        font-family: sans-serif;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>OClock - Memory game</h1>
+    <div>
+        <ul>
+            <li>Date 2019-08-06</li>
+            <li>Version 0.1</li>
+            <li>Auteur Julien Delsescaux</li>
+            <li>Testé sur Firefox et Chrome</li>
+        </ul>
+
+    </div>
+</header>
+
+<section>
+    <ul>
+    <li><a href="http://memory.jlb.ninja/">Demo</a></li>
+    <li><a href="http://memory.jlb.ninja/service.php">Endpoints</a></li>
+    </ul>
+</section>
+
+
+<section>
+    <h2>Objectifs</h2>
+    <div>
+        <p>
+            Au delà de l'aspect démonstration technique, ce jeu a pour objectif de pouvoir potentiellement servir de support de formation.
+            <br/>Dans la version courante voici les points pouvant être abordés grace à ce jeu :
+            <ul>
+
+                <li>Architecture<ul>
+                    <li>Architecture "microservice"</li>
+                    <li>Services assimilés REST</li>
+                </ul></li>
+
+                <li>Backend<ul>
+                    <li>Autoloading</li>
+                    <li>Structure PSR 4</li>
+                    <li>Protocole HTTP et Routing</li>
+                    <li>Héritage de classe</li>
+                    <li>SQL (avec SQLite3)</li>
+
+                </ul></li>
+
+
+                <li>Front<ul>
+                    <li>Javascript natif orienté objet</li>
+                    <li>Ajax</li>
+                    <li>Utilisation des variables CSS</li>
+                    <li>Notion d'injection de dépendance</li>
+                </ul></li>
+
+                <li>Divers<ul>
+                    <li>Algorithme simple de mélange (permettrait de pouvoir faire une introduction à la complexité algorithmique)</li>
+                    <li>Usage de fonctions mathématiques simples pour des question de mise en page (et oui les math peuvent être sympas !)</li>
+                </ul></li>
+            </ul>
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Remarques</h2>
+    <div>
+        <p>Je suis l'auteur des <a href="https://github.com/ElBiniou?utf8=%E2%9C%93&tab=repositories&q=phi-&type=&language=">bibliothèques Phi</a> utilisées coté PHP (bibliothèques/framework encore en cours de conception)</p>
+
+        <p>
+            J'ai utilisé une partie de mes bibliothèque pour gagner du temps, notemment sur l'aspect routing et bdd
+        </p>
+
+        <p>
+            Pour visualiser le jeu avec une jauge de temps classique modifier le fichier public/application/OC/Memory/javascript/Configuration.js
+        </p>
+
+    </div>
+</section>
+
+
+<section>
+    <h2>Améliorations</h2>
+    <div>
+    <p>
+        Liste des points à améliorer
+        <ul>
+            <li>Meilleure architecture/intégration CSS</li>
+            <li>Utilisation d'un logiciel de build coté front, par exemple <a href="https://webpack.js.org/">Webpack</a></li>
+            <li>Utilisation de composer coté PHP</li>
+            <li>Création de taches de maintenances coté backend en  utilisant <a href="https://www.phing.info/">Phing</a> (exemple concernant la tache "reset" qui ne devrait pas être accessible depuis un endpoint</li>
+            <li>Création d'une couche configuration/DI coté php</li>
+            <li>Architecture webcomponent ou React coté Javascript</li>
+            <li>Utilisation d'ES6</li>
+        </ul>
+    </p>
+    </div>
+</section>
+
+
+
+<section>
+    <h2>Pour aller plus loin, déploiement</h2>
+    <div>
+        <p>Je n'ai pas eu le temps d'aborder le sujet</p>
+
+        <p>
+            Mais afin de pouvoir livrer un support de formation "prêt" à l'usage, j'aurai livré une image <a href="https://www.vagrantup.com/">Vagrant</a> (pas eu le temps de la créer)
+        </p>
+        <p>
+            Pour aller plus loins dans la logique de déploiement, utilisation <a href="https://docs.ansible.com/ansible/latest/index.html">d'Ansible</a>
+        </p>
+
+        <p>
+            Pour certaine tâches de déploiement utilisation de <a href="https://deployer.org/">PHPDeployer</a>
+        </p>
+
+        <p>
+            Concernant Docker, j'ai utilisé cette technologie pour faire "poper" des bdd MySQL de démo. Cependant cela fait pas mal de temps que je n'ai pas utilisé cette technologie
+        </p>
+
+        <p>
+            Packager l'application dans un fichier phar serait également quelque chose d'intéressant
+        </p>
+    </div>
+</section>
+
+
+<section>
+    <h2>Considération personnelles</h2>
+    <div>
+        <p>Je suis loin d'être complétement satisfait par la qualité de mon code de la finition de mon livrable. J'ai cependant voulu aborder un maximum de points potentiellement utiles dans le cadre d'une formation de développeur.</p>
+
+        <p>Dans le cadre d'un vrai support de cours mon code aurait été beaucoup plus commenté. (avec des rappel vers des leçons)</p>
+
+        <p>
+            Je n'ai pas utilisé scss par manque de temps et "d'utilité immédiate". J'avais cependant voulu en montrer l'usage et j'avais commencé à coder quelque chose dans ./application/bin/scss.php <br/> Dans le cadre d'une formation ce script m'aurait servi de support pour montrer l'usage de PHP en ligne de commande
+        </p>
+
+        <p>
+            Le choix de développer une jauge de temps en cercle avait pour objectif de montrer quelque chose de joli (pour le petit effet "wow" auprès d'apprenants) mais surtout pour illustrer un usage "flagrant" de l'injection de dépendance. (De plus, montrer à des étudiants qu'avec un peu de math il est possible de faire des choses sympa est plaisant je trouve)
+        </p>
+    </div>
+</section>
+
+
+
+</body>
+</html>

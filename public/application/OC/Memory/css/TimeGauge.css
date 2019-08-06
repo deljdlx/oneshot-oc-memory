@@ -1,0 +1,11 @@
+
+.oc-memory-timegauge {
+    position:absolute;
+}
+
+.oc-memory-timegauge circle:last-child {
+    fill: var(--gaugeBackground);
+    stroke: var(--color-main);
+    stroke-width: var(--gaugeWidh);
+}
+

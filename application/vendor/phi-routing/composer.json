@@ -1,0 +1,25 @@
+{
+	"name": "phi-routing",
+	"description": "Phi routing",
+
+	"repositories": [
+		{"type": "vcs", "url": "https://github.com/ElBiniou/phi-core"},
+		{"type": "vcs", "url": "https://github.com/ElBiniou/phi-http"},
+		{"type": "vcs", "url": "https://github.com/ElBiniou/phi-event"}
+	],
+	"require":
+	{
+		"phi-core": "dev-master",
+		"phi-http": "dev-master",
+		"phi-event": "dev-master"
+	},
+
+	"autoload": {
+		"psr-4": {
+			"Phi\\Routing\\": "source/class"
+		},
+		"files": [
+
+		]
+	}
+}
